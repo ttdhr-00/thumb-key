@@ -62,6 +62,7 @@ import com.dessalines.thumbkey.keyboards.KB_EN_SYMBOLS_NUMBERS_TWO_HANDS
 import com.dessalines.thumbkey.keyboards.KB_EN_SYMBOLS_TWO_HANDS
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_COMPOSE
+import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_COMPOSE_FORK01
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_PROGRAMMING
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_PROGRAMMING_EXPANDED
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_PROGRAMMING_WIDE
@@ -238,6 +239,7 @@ enum class KeyboardLayout(
     SKThumbKeyV1(KB_SK_THUMBKEY_V1),
     ENNOTypeSplit(KB_EN_NO_TYPESPLIT),
     ENThumbKeyCompose(KB_EN_THUMBKEY_COMPOSE),
+    ENThumbKeyCompose-fork01(KB_EN_THUMBKEY_COMPOSE_FORK01),
     ENNOThumbKey(KB_EN_NO_THUMBKEY),
     ENSymbolsTwoHands(KB_EN_SYMBOLS_TWO_HANDS),
     ENSymbolsNumbersTwoHands(KB_EN_SYMBOLS_NUMBERS_TWO_HANDS),
