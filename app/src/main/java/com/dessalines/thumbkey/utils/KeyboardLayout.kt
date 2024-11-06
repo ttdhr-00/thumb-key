@@ -62,7 +62,6 @@ import com.dessalines.thumbkey.keyboards.KB_EN_SYMBOLS_NUMBERS_TWO_HANDS
 import com.dessalines.thumbkey.keyboards.KB_EN_SYMBOLS_TWO_HANDS
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_COMPOSE
-import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_COMPOSE_FORK01
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_PROGRAMMING
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_PROGRAMMING_EXPANDED
 import com.dessalines.thumbkey.keyboards.KB_EN_THUMBKEY_PROGRAMMING_WIDE
@@ -158,6 +157,7 @@ import com.dessalines.thumbkey.keyboards.KB_UK_MESSAGEASE_SYMBOLS
 import com.dessalines.thumbkey.keyboards.KB_UK_RU_MESSAGEASE_SYMBOLS
 import com.dessalines.thumbkey.keyboards.KB_UK_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_VN_THUMBKEY
+import com.dessalines.thumbkey.keyboards.KB_EN_CUSTOM_010
 
 // Make sure new keyboards are added AT THE END of this list, and have a higher index.
 // DO NOT put them in the middle of the list!
@@ -321,5 +321,5 @@ enum class KeyboardLayout(
     HIThumbKey(KB_HI_THUMBKEY),
     ENNLTypeSplit(KB_EN_NL_TYPESPLIT),
     HIThumbKeyExtended(KB_HI_THUMBKEY_EXTENDED),
-    ENThumbKeyComposeFork01(KB_EN_THUMBKEY_COMPOSE_FORK01),
+    ENCustom010(KB_EN_CUSTOM_010),
 }

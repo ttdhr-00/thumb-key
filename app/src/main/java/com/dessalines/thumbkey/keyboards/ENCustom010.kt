@@ -10,7 +10,7 @@ import com.dessalines.thumbkey.utils.FontSizeVariant.*
 import com.dessalines.thumbkey.utils.KeyAction.*
 import com.dessalines.thumbkey.utils.SwipeNWay.*
 
-val KB_EN_THUMBKEY_COMPOSE_FORK01_MAIN =
+val KB_EN_CUSTOM_010_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -49,7 +49,9 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_MAIN =
                     center = KeyC("n", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
                     bottom = KeyC("m"),
+                    top = KeyC("ng"),
                     right = KeyC("h"),
+                    left = KeyC("ng", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("o", size = LARGE),
@@ -62,6 +64,7 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_MAIN =
                             swipeReturnAction = ToggleCurrentWordCapitalization(true),
                             color = MUTED,
                         ),
+                    right = KeyC("w", color = MUTED),
                 ),
                 NUMERIC_KEY_ITEM,
             ),
@@ -75,9 +78,9 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_MAIN =
                 KeyItemC(
                     center = KeyC("i", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
+                    top = KeyC("e", color = MUTED),
                     right = KeyC("y"),
-                    left = 
-                        KeyC("e"),
+                    left = KeyC("e", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("a", size = LARGE),
@@ -95,7 +98,7 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_MAIN =
         ),
     )
 
-val KB_EN_THUMBKEY_COMPOSE_FORK01_SHIFTED =
+val KB_EN_CUSTOM_010_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -134,7 +137,9 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_SHIFTED =
                     center = KeyC("N", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
                     bottom = KeyC("M"),
+                    top = KeyC("NG"),
                     right = KeyC("H"),
+                    left = KeyC("NG", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("O", size = LARGE),
@@ -155,6 +160,7 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_SHIFTED =
                             swipeReturnAction = ToggleCurrentWordCapitalization(true),
                             color = MUTED,
                         ),
+                    right = KeyC("W", color = MUTED),
                 ),
                 NUMERIC_KEY_ITEM,
             ),
@@ -168,9 +174,9 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_SHIFTED =
                 KeyItemC(
                     center = KeyC("I", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
+                    top = KeyC("E", color = MUTED),
                     right = KeyC("Y"),
-                    left = 
-                        KeyC("E"),
+                    left = KeyC("E", color = MUTED),
                 ),
                 KeyItemC(
                     center = KeyC("A", size = LARGE),
@@ -188,13 +194,13 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_SHIFTED =
         ),
     )
 
-val KB_EN_THUMBKEY_COMPOSE_FORK01: KeyboardDefinition =
+val KB_EN_CUSTOM_010: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english thumb-key compose - fork 01",
+        title = "english custom keyboard - 010",
         modes =
             KeyboardDefinitionModes(
-                main = KB_EN_THUMBKEY_COMPOSE_FORK01_MAIN,
-                shifted = KB_EN_THUMBKEY_COMPOSE_FORK01_SHIFTED,
+                main = KB_EN_CUSTOM_010_MAIN,
+                shifted = KB_EN_CUSTOM_010_SHIFTED,
                 numeric = NUMERIC_KEYBOARD,
             ),
         settings =
