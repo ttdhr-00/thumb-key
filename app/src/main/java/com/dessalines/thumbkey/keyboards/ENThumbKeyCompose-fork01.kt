@@ -78,7 +78,6 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_MAIN =
                     right = KeyC("y"),
                     left = 
                         KeyC("e"),
-                        color = MUTED,
                 ),
                 KeyItemC(
                     center = KeyC("a", size = LARGE),
