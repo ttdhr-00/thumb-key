@@ -72,8 +72,9 @@ val KB_EN_CUSTOM_010_MAIN =
                 KeyItemC(
                     center = KeyC("r", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
+                    bottom = KeyC("x"),
                     right = KeyC("l"),
-                    left = KeyC("x"),
+                    left = KeyC("ll"),
                 ),
                 KeyItemC(
                     center = KeyC("i", size = LARGE),
@@ -85,6 +86,7 @@ val KB_EN_CUSTOM_010_MAIN =
                 KeyItemC(
                     center = KeyC("a", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
+                    bottom = KeyC("wh"),
                     top = KeyC("q"),
                     right = KeyC("e"),
                     left = KeyC("w"),
@@ -168,8 +170,9 @@ val KB_EN_CUSTOM_010_SHIFTED =
                 KeyItemC(
                     center = KeyC("R", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
+                    bottom = KeyC("X"),
                     right = KeyC("L"),
-                    left = KeyC("X"),
+                    left = KeyC("LL"),
                 ),
                 KeyItemC(
                     center = KeyC("I", size = LARGE),
@@ -181,6 +184,7 @@ val KB_EN_CUSTOM_010_SHIFTED =
                 KeyItemC(
                     center = KeyC("A", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
+                    bottom = KeyC("WH"),
                     top = KeyC("Q"),
                     right = KeyC("E"),
                     left = KeyC("W"),
