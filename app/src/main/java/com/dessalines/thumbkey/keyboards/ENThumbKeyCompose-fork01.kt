@@ -171,7 +171,6 @@ val KB_EN_THUMBKEY_COMPOSE_FORK01_SHIFTED =
                     right = KeyC("Y"),
                     left = 
                         KeyC("E"),
-                        color = MUTED,
                 ),
                 KeyItemC(
                     center = KeyC("A", size = LARGE),
