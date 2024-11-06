@@ -239,7 +239,6 @@ enum class KeyboardLayout(
     SKThumbKeyV1(KB_SK_THUMBKEY_V1),
     ENNOTypeSplit(KB_EN_NO_TYPESPLIT),
     ENThumbKeyCompose(KB_EN_THUMBKEY_COMPOSE),
-    ENThumbKeyCompose-fork01(KB_EN_THUMBKEY_COMPOSE_FORK01),
     ENNOThumbKey(KB_EN_NO_THUMBKEY),
     ENSymbolsTwoHands(KB_EN_SYMBOLS_TWO_HANDS),
     ENSymbolsNumbersTwoHands(KB_EN_SYMBOLS_NUMBERS_TWO_HANDS),
@@ -322,4 +321,5 @@ enum class KeyboardLayout(
     HIThumbKey(KB_HI_THUMBKEY),
     ENNLTypeSplit(KB_EN_NL_TYPESPLIT),
     HIThumbKeyExtended(KB_HI_THUMBKEY_EXTENDED),
+    ENThumbKeyComposeFork01(KB_EN_THUMBKEY_COMPOSE_FORK01),
 }
