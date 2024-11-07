@@ -158,6 +158,7 @@ import com.dessalines.thumbkey.keyboards.KB_UK_RU_MESSAGEASE_SYMBOLS
 import com.dessalines.thumbkey.keyboards.KB_UK_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_VN_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_EN_CUSTOM_010
+import com.dessalines.thumbkey.keyboards.KB_EN_CUSTOM_011
 
 // Make sure new keyboards are added AT THE END of this list, and have a higher index.
 // DO NOT put them in the middle of the list!
@@ -322,4 +323,5 @@ enum class KeyboardLayout(
     ENNLTypeSplit(KB_EN_NL_TYPESPLIT),
     HIThumbKeyExtended(KB_HI_THUMBKEY_EXTENDED),
     ENCustom010(KB_EN_CUSTOM_010),
+    ENCustom011(KB_EN_CUSTOM_011),
 }

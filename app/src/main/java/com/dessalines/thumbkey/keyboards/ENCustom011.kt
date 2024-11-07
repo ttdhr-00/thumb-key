@@ -10,7 +10,7 @@ import com.dessalines.thumbkey.utils.FontSizeVariant.*
 import com.dessalines.thumbkey.utils.KeyAction.*
 import com.dessalines.thumbkey.utils.SwipeNWay.*
 
-val KB_EN_CUSTOM_010_MAIN =
+val KB_EN_CUSTOM_011_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -98,13 +98,41 @@ val KB_EN_CUSTOM_010_MAIN =
                 BACKSPACE_KEY_ITEM,
             ),
             listOf(
+                KeyItemC(
+                    center =
+                        KeyC(
+                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropUp),
+                            action = ToggleShiftMode(true),
+                            swipeReturnAction = ToggleCurrentWordCapitalization(true),
+                            size = LARGE,
+                        ),
+                    swipeType = FOUR_WAY_CROSS,
+                    bottom =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("°/"),
+                            action = ComposeLastKey("°"),
+                            color = MUTED,
+                        ),
+                    right =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("'"),
+                            action = ComposeLastKey("'"),
+                            color = MUTED,
+                        ),
+                    left =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("`"),
+                            action = ComposeLastKey("`"),
+                            color = MUTED,
+                        ),
+                ),
                 SPACEBAR_KEY_ITEM,
                 RETURN_KEY_ITEM,
             ),
         ),
     )
 
-val KB_EN_CUSTOM_010_SHIFTED =
+val KB_EN_CUSTOM_011_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -200,19 +228,55 @@ val KB_EN_CUSTOM_010_SHIFTED =
                 BACKSPACE_KEY_ITEM,
             ),
             listOf(
+                KeyItemC(
+                    center =
+                        KeyC(
+                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
+                            action = ToggleShiftMode(false),
+                            swipeReturnAction = ToggleCurrentWordCapitalization(false),
+                            size = LARGE,
+                        ),
+                    top =
+                        KeyC(
+                            display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
+                            capsModeDisplay = KeyDisplay.IconDisplay(Icons.Outlined.Copyright),
+                            action = ToggleCapsLock,
+                            swipeReturnAction = ToggleCurrentWordCapitalization(true),
+                            color = MUTED,
+                        ),
+                    swipeType = FOUR_WAY_CROSS,
+                    bottom =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("ˇ"),
+                            action = ComposeLastKey("ˇ"),
+                            color = MUTED,
+                        ),
+                    right =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("\""),
+                            action = ComposeLastKey("\""),
+                            color = MUTED,
+                        ),
+                    left =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("~"),
+                            action = ComposeLastKey("~"),
+                            color = MUTED,
+                        ),
+                ),
                 SPACEBAR_KEY_ITEM,
                 RETURN_KEY_ITEM,
             ),
         ),
     )
 
-val KB_EN_CUSTOM_010: KeyboardDefinition =
+val KB_EN_CUSTOM_011: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english custom keyboard - 010",
+        title = "english custom keyboard - 011",
         modes =
             KeyboardDefinitionModes(
-                main = KB_EN_CUSTOM_010_MAIN,
-                shifted = KB_EN_CUSTOM_010_SHIFTED,
+                main = KB_EN_CUSTOM_011_MAIN,
+                shifted = KB_EN_CUSTOM_011_SHIFTED,
                 numeric = NUMERIC_KEYBOARD,
             ),
         settings =
