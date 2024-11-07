@@ -26,7 +26,7 @@ val KB_EN_CUSTOM_010_MAIN =
                     center = KeyC("c", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
                     bottom = KeyC("g"),
-                    top = KeyC("gh", color = MUTED)
+                    top = KeyC("gh", color = MUTED),
                     right = KeyC("ch", color = MUTED),
                     left = KeyC("k"),
                 ),
@@ -120,7 +120,7 @@ val KB_EN_CUSTOM_010_SHIFTED =
                     center = KeyC("C", size = LARGE),
                     swipeType = FOUR_WAY_CROSS,
                     bottom = KeyC("G"),
-                    top = KeyC("gGH", color = MUTED)
+                    top = KeyC("GH", color = MUTED),
                     right = KeyC("CH", color = MUTED),
                     left = KeyC("K"),
                 ),
