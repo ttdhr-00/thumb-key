@@ -10,7 +10,7 @@ import com.dessalines.thumbkey.utils.FontSizeVariant.*
 import com.dessalines.thumbkey.utils.KeyAction.*
 import com.dessalines.thumbkey.utils.SwipeNWay.*
 
-val KB_EN_CUSTOM_010_MAIN =
+val KB_EN_CUSTOM_100_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -133,7 +133,7 @@ val KB_EN_CUSTOM_010_MAIN =
         ),
     )
 
-val KB_EN_CUSTOM_010_SHIFTED =
+val KB_EN_CUSTOM_100_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -264,13 +264,13 @@ val KB_EN_CUSTOM_010_SHIFTED =
         ),
     )
 
-val KB_EN_CUSTOM_010: KeyboardDefinition =
+val KB_EN_CUSTOM_100: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english custom keyboard - 010",
+        title = "english custom keyboard - 1-0-0",
         modes =
             KeyboardDefinitionModes(
-                main = KB_EN_CUSTOM_010_MAIN,
-                shifted = KB_EN_CUSTOM_010_SHIFTED,
+                main = KB_EN_CUSTOM_100_MAIN,
+                shifted = KB_EN_CUSTOM_100_SHIFTED,
                 numeric = NUMERIC_KEYBOARD,
             ),
         settings =
