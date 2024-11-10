@@ -95,7 +95,36 @@ val KB_EN_CUSTOM_010_MAIN =
                     right = KeyC("e"),
                     left = KeyC("w"),
                 ),
-                BACKSPACE_KEY_ITEM,
+                KeyItemC(
+                    center =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("⌫"),
+                            action =
+                                SendEvent(
+                                    KeyEvent(
+                                        KeyEvent.ACTION_DOWN,
+                                        KeyEvent
+                                            .KEYCODE_DEL,
+                                    ),
+                                ),
+                            size = LARGE,
+                            color = SECONDARY,
+                        ),
+                    swipeType = FOUR_WAY_CROSS,
+                    right =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("⇥"),
+                            action = DeleteWordAfterCursor,
+                            color = MUTED,
+                        ),
+                    left =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("⇤"),
+                            action = DeleteWordBeforeCursor,
+                            color = MUTED,
+                        ),
+                    backgroundColor = SURFACE_VARIANT,
+                ),
             ),
             listOf(
                 SPACEBAR_KEY_ITEM,
@@ -197,7 +226,36 @@ val KB_EN_CUSTOM_010_SHIFTED =
                     right = KeyC("E"),
                     left = KeyC("W"),
                 ),
-                BACKSPACE_KEY_ITEM,
+                KeyItemC(
+                    center =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("⌫"),
+                            action =
+                                SendEvent(
+                                    KeyEvent(
+                                        KeyEvent.ACTION_DOWN,
+                                        KeyEvent
+                                            .KEYCODE_DEL,
+                                    ),
+                                ),
+                            size = LARGE,
+                            color = SECONDARY,
+                        ),
+                    swipeType = FOUR_WAY_CROSS,
+                    right =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("⇥"),
+                            action = DeleteWordAfterCursor,
+                            color = MUTED,
+                        ),
+                    left =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("⇤"),
+                            action = DeleteWordBeforeCursor,
+                            color = MUTED,
+                        ),
+                    backgroundColor = SURFACE_VARIANT,
+                ),
             ),
             listOf(
                 SPACEBAR_KEY_ITEM,

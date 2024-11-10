@@ -842,6 +842,12 @@ fun performKeyAction(
             onToggleShiftMode(enable)
         }
 
+        is KeyAction.ToggleShiftAltMode -> {
+            val enable = action.enable
+            Log.d(TAG, "Toggling ShiftedAlt: $enable")
+            onToggleShiftAltMode(enable)
+        }
+
         is KeyAction.ToggleNumericMode -> {
             val enable = action.enable
             Log.d(TAG, "Toggling Numeric: $enable")
