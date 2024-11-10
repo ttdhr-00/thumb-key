@@ -327,6 +327,8 @@ fun performKeyAction(
     autoCapitalize: Boolean,
     keyboardSettings: KeyboardDefinitionSettings,
     onToggleShiftMode: (enable: Boolean) -> Unit,
+    onCycleShiftModeA: () -> Unit,
+    onToggleShiftAltMode: (enable: Boolean) -> Unit,
     onToggleNumericMode: (enable: Boolean) -> Unit,
     onToggleEmojiMode: (enable: Boolean) -> Unit,
     onToggleCapsLock: () -> Unit,
@@ -840,6 +842,12 @@ fun performKeyAction(
             val enable = action.enable
             Log.d(TAG, "Toggling Shifted: $enable")
             onToggleShiftMode(enable)
+        }
+
+        is KeyAction.CyckeShiftModeA -> {
+            val enable = action.enable
+            Log.d(TAG, "Cycling Shifted: $enable")
+            onCycleShiftModeA(enable)
         }
 
         is KeyAction.ToggleShiftAltMode -> {

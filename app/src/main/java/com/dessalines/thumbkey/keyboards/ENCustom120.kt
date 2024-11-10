@@ -296,7 +296,7 @@ val KB_EN_CUSTOM_120_SHIFTED =
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
+                            display = KeyDisplay.TextDisplay("⇩"),
                             action = ToggleShiftMode(false),
                             swipeReturnAction = ToggleCurrentWordCapitalization(false),
                             size = LARGE,
@@ -388,7 +388,7 @@ val KB_EN_CUSTOM_120_SHIFTED_ALT =
                     bottom = KeyC("U"),
                     right =
                         KeyC(
-                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
+                            display = KeyDisplay.TextDisplay("⇩"),
                             action = ToggleShiftMode(false),
                             swipeReturnAction = ToggleCurrentWordCapitalization(false),
                             color = MUTED,

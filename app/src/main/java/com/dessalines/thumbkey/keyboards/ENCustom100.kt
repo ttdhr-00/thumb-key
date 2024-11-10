@@ -185,7 +185,7 @@ val KB_EN_CUSTOM_100_SHIFTED =
                     bottom = KeyC("U"),
                     left =
                         KeyC(
-                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
+                            display = KeyDisplay.TextDisplay("⇩"),
                             action = ToggleShiftMode(false),
                             swipeReturnAction = ToggleCurrentWordCapitalization(false),
                             color = MUTED,

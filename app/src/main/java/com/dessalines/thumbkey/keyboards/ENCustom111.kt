@@ -10,7 +10,7 @@ import com.dessalines.thumbkey.utils.FontSizeVariant.*
 import com.dessalines.thumbkey.utils.KeyAction.*
 import com.dessalines.thumbkey.utils.SwipeNWay.*
 
-val KB_EN_CUSTOM_110_MAIN =
+val KB_EN_CUSTOM_111_MAIN =
     KeyboardC(
         listOf(
             listOf(
@@ -162,7 +162,7 @@ val KB_EN_CUSTOM_110_MAIN =
         ),
     )
 
-val KB_EN_CUSTOM_110_SHIFTED =
+val KB_EN_CUSTOM_111_SHIFTED =
     KeyboardC(
         listOf(
             listOf(
@@ -214,7 +214,7 @@ val KB_EN_CUSTOM_110_SHIFTED =
                     bottom = KeyC("U"),
                     left =
                         KeyC(
-                            display = KeyDisplay.TextDisplay("⇩"),
+                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
                             action = ToggleShiftMode(false),
                             swipeReturnAction = ToggleCurrentWordCapitalization(false),
                             color = MUTED,
@@ -290,18 +290,18 @@ val KB_EN_CUSTOM_110_SHIFTED =
                 KeyItemC(
                     center =
                         KeyC(
-                            display = KeyDisplay.IconDisplay(Icons.Outlined.ArrowDropDown),
-                            action = ToggleShiftMode(false),
-                            swipeReturnAction = ToggleCurrentWordCapitalization(false),
-                            size = LARGE,
-                        ),
-                    top =
-                        KeyC(
                             display = KeyDisplay.IconDisplay(Icons.Outlined.KeyboardCapslock),
                             capsModeDisplay = KeyDisplay.IconDisplay(Icons.Outlined.Copyright),
                             action = ToggleCapsLock,
                             swipeReturnAction = ToggleCurrentWordCapitalization(true),
                             color = MUTED,
+                            size = LARGE,
+                        ),
+                    top =
+                        KeyC(
+                            display = KeyDisplay.TextDisplay("⇩"),
+                            action = ToggleShiftMode(false),
+                            swipeReturnAction = ToggleCurrentWordCapitalization(false),
                         ),
                     swipeType = FOUR_WAY_CROSS,
                     bottom =
@@ -332,11 +332,11 @@ val KB_EN_CUSTOM_110_SHIFTED =
 
 val KB_EN_CUSTOM_110: KeyboardDefinition =
     KeyboardDefinition(
-        title = "english custom keyboard - 1-1-0",
+        title = "english custom keyboard - 1-1-1",
         modes =
             KeyboardDefinitionModes(
-                main = KB_EN_CUSTOM_110_MAIN,
-                shifted = KB_EN_CUSTOM_110_SHIFTED,
+                main = KB_EN_CUSTOM_111_MAIN,
+                shifted = KB_EN_CUSTOM_111_SHIFTED,
                 numeric = NUMERIC_KEYBOARD,
             ),
         settings =
