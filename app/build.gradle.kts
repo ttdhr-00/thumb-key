@@ -7,14 +7,14 @@ plugins {
 
 android {
     buildToolsVersion = "34.0.0"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.dessalines.thumbkey"
         minSdk = 21
-        targetSdk = 34
-        versionCode = 121
-        versionName = "4.0.3"
+        targetSdk = 35
+        versionCode = 128
+        versionName = "4.0.10"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables {
@@ -88,13 +88,13 @@ dependencies {
     implementation("com.github.dessalines:room-db-export-import:0.1.0")
 
     // Compose BOM
-    implementation(platform("androidx.compose:compose-bom:2024.10.01"))
+    implementation(platform("androidx.compose:compose-bom:2024.12.01"))
     implementation("androidx.compose.ui:ui")
     implementation("androidx.compose.material3:material3")
-    implementation("androidx.compose.material:material-icons-extended-desktop:1.7.5")
+    implementation("androidx.compose.material:material-icons-extended-desktop:1.7.6")
     implementation("androidx.compose.material3:material3-window-size-class")
     implementation("androidx.compose.ui:ui-tooling")
-    implementation("androidx.compose.runtime:runtime-livedata")
+    implementation("androidx.compose.runtime:runtime-livedata:1.7.6")
 
     // Activities
     implementation("androidx.activity:activity-compose:1.9.3")
@@ -104,13 +104,13 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-compose")
 
     // Navigation
-    implementation("androidx.navigation:navigation-compose:2.8.3")
+    implementation("androidx.navigation:navigation-compose:2.8.5")
 
     // Emoji Picker
     implementation("androidx.emoji2:emoji2-emojipicker:1.5.0")
 
     // Markdown
-    implementation("com.github.jeziellago:compose-markdown:0.5.4")
+    implementation("com.github.jeziellago:compose-markdown:0.5.6")
 
     // Preferences
     implementation("me.zhanghai.compose.preference:library:1.1.1")

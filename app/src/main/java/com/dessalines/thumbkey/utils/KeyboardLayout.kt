@@ -14,6 +14,7 @@ import com.dessalines.thumbkey.keyboards.KB_DE_NORDIC_MESSAGEASE
 import com.dessalines.thumbkey.keyboards.KB_DE_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_DE_THUMBKEY_MULTILINGUAL
 import com.dessalines.thumbkey.keyboards.KB_DE_THUMBKEY_SYMBOLS
+import com.dessalines.thumbkey.keyboards.KB_DE_THUMBKEY_SYMNUM
 import com.dessalines.thumbkey.keyboards.KB_DE_TYPESPLIT
 import com.dessalines.thumbkey.keyboards.KB_EN_COLUMNAR
 import com.dessalines.thumbkey.keyboards.KB_EN_COLUMNAR_QUICK
@@ -24,6 +25,7 @@ import com.dessalines.thumbkey.keyboards.KB_EN_DE_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_EN_DE_THUMBKEY_AE
 import com.dessalines.thumbkey.keyboards.KB_EN_DE_THUMBKEY_V2
 import com.dessalines.thumbkey.keyboards.KB_EN_DOUBLE_SYMBOLS
+import com.dessalines.thumbkey.keyboards.KB_EN_DVORAK_WIDE
 import com.dessalines.thumbkey.keyboards.KB_EN_EE_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_EN_EO_MESSAGEASE_SYMBOLS
 import com.dessalines.thumbkey.keyboards.KB_EN_EO_THUMBKEY
@@ -94,6 +96,7 @@ import com.dessalines.thumbkey.keyboards.KB_FI_TYPESPLIT
 import com.dessalines.thumbkey.keyboards.KB_FR_MESSAGEASE
 import com.dessalines.thumbkey.keyboards.KB_FR_THUMBKEY_V1
 import com.dessalines.thumbkey.keyboards.KB_FR_THUMBKEY_V2
+import com.dessalines.thumbkey.keyboards.KB_FR_THUMBKEY_V3
 import com.dessalines.thumbkey.keyboards.KB_FR_TYPESPLIT
 import com.dessalines.thumbkey.keyboards.KB_GLAGOLITIC_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_GR_THUMBKEY
@@ -152,6 +155,7 @@ import com.dessalines.thumbkey.keyboards.KB_T9
 import com.dessalines.thumbkey.keyboards.KB_TOK_SITELEN_THUMBKEY_EMOJI
 import com.dessalines.thumbkey.keyboards.KB_TOK_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_TR_THUMBKEY
+import com.dessalines.thumbkey.keyboards.KB_TR_TYPESPLIT
 import com.dessalines.thumbkey.keyboards.KB_UK_BY_RU_THUMBKEY
 import com.dessalines.thumbkey.keyboards.KB_UK_MESSAGEASE_SYMBOLS
 import com.dessalines.thumbkey.keyboards.KB_UK_RU_MESSAGEASE_SYMBOLS
@@ -323,7 +327,8 @@ enum class KeyboardLayout(
     HIThumbKey(KB_HI_THUMBKEY),
     ENNLTypeSplit(KB_EN_NL_TYPESPLIT),
     HIThumbKeyExtended(KB_HI_THUMBKEY_EXTENDED),
-    ENCustom010(KB_EN_CUSTOM_010),
-    ENCustom011(KB_EN_CUSTOM_011),
-    ENCustom012(KB_EN_CUSTOM_012),
+    FRThumbKeyV3(KB_FR_THUMBKEY_V3),
+    DEThumbkeySymNum(KB_DE_THUMBKEY_SYMNUM),
+    TRTypeSplit(KB_TR_TYPESPLIT),
+    ENDvorakWide(KB_EN_DVORAK_WIDE),
 }

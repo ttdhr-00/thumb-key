@@ -134,6 +134,10 @@ sealed class KeyAction {
         val enable: Boolean,
     ) : KeyAction()
 
+    class ShiftAndCapsLock(
+        val enable: Boolean,
+    ) : KeyAction()
+
     class ToggleCurrentWordCapitalization(
         val toggleUp: Boolean,
     ) : KeyAction()
@@ -163,6 +167,8 @@ sealed class KeyAction {
 
         data object CycleRight : KeyAction()
     }
+
+    data object DeleteKeyAction : KeyAction()
 
     data object DeleteWordBeforeCursor : KeyAction()
 
