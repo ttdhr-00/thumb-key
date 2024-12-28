@@ -331,4 +331,7 @@ enum class KeyboardLayout(
     DEThumbkeySymNum(KB_DE_THUMBKEY_SYMNUM),
     TRTypeSplit(KB_TR_TYPESPLIT),
     ENDvorakWide(KB_EN_DVORAK_WIDE),
+    ENCustom010(KB_EN_CUSTOM_010),
+    ENCustom011(KB_EN_CUSTOM_011),
+    ENCustom012(KB_EN_CUSTOM_012),
 }
